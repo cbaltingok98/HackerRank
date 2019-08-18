@@ -33,8 +33,6 @@ function timeConversion(s) {
 
     let newTime = "";
 
-    //hh = parseInt(hh);
-
     if (s.search("AM") == -1) {
         //PM
         hh < 12 ? newTime += (hh + 12) : newTime += hh;

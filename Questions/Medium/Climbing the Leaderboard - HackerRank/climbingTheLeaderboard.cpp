@@ -26,13 +26,14 @@ void find(int aliceScore, int &rankNum, map<int, int> sc){
         }
 }
 vector<int> climbingLeaderboard(vector<int> scores, vector<int> alice) {
+    
     vector<int> holdIndex;
     map <int, int> sc;
     map <int, int>::iterator itr;
-    
-    int rangeCheck = 1000;
+   
     int index = 1;
     bool good = false;
+    
     for(int i = 0; i < scores.size(); i++){
         good = false;
         if(sc.empty()) {

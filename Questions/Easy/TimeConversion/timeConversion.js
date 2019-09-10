@@ -37,9 +37,9 @@ function timeConversion(s) {
         //PM
         hh < 12 ? newTime += (hh + 12) : newTime += hh;
         newTime += ":" + mm + ":" + ss;
+        
     } else {
         //AM
-        
         if (hh == 12) {
             newTime += "00";
         } else if (hh < 10) {
@@ -47,8 +47,6 @@ function timeConversion(s) {
         } else {
             newTime += hh;
         }
-        
-
         newTime += ":" + mm + ":" + ss;
 
     }
